@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi! Skateria | Authentic Wood-Fired Pizza</title>
+    <meta name="description" content="Hidden gem in Rotterdam. Imported oven and chef, in a cozy relaxed section of the skatepark.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-orange-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-bold text-white tracking-wider">PI! <span class="text-orange-500">SKATERIA</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-widest uppercase">
+                <a href="#about" class="hover:text-orange-500 transition-colors">About</a>
+                <a href="#menu" class="hover:text-orange-500 transition-colors">Menu</a>
+                <a href="#reviews" class="hover:text-orange-500 transition-colors">Reviews</a>
+                <a href="#visit" class="hover:text-orange-500 transition-colors">Visit</a>
+            </div>
+            <a href="#reservation" class="hidden md:inline-block bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-semibold transition-transform hover:scale-105">Book Table</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" alt="Wood-fired pizza oven" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-zinc-950/40 to-zinc-950"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 fade-in-up">
+            <p class="text-orange-500 font-bold tracking-[0.2em] uppercase mb-4 text-sm">Rotterdam's Hidden Gem</p>
+            <h1 class="text-6xl md:text-8xl font-serif font-bold mb-6 drop-shadow-lg">Slice & Skate.</h1>
+            <p class="text-lg md:text-xl text-zinc-300 mb-8 max-w-2xl mx-auto font-light">Authentic wood-fired pizza, craft beers, and an imported chef inside a cozy, relaxed skatepark atmosphere.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#menu" class="bg-white text-zinc-900 px-8 py-3 rounded-full font-bold hover:bg-zinc-200 transition-colors">View Menu</a>
+                <a href="#reservation" class="border border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-zinc-900 transition-colors">Reserve a Table</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-zinc-950 relative">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6 fade-in">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-white">More Than Just a Pizzeria.</h2>
+                <div class="w-20 h-1 bg-orange-500"></div>
+                <p class="text-zinc-400 leading-relaxed text-lg">
+                    Located in the heart of Rotterdam at Piekstraat 45, Pi! Skateria merges authentic Italian culinary tradition with urban culture. Featuring an imported wood-fired oven and chef, we serve high-quality pizzas (€10–€20) while you enjoy live skateboard entertainment.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-6">
+                    <div class="flex items-center space-x-3 text-zinc-300"><i class="fa-solid fa-dog text-orange-500 text-xl"></i><span>Dog Friendly</span></div>
+                    <div class="flex items-center space-x-3 text-zinc-300"><i class="fa-solid fa-wifi text-orange-500 text-xl"></i><span>Free Wi-Fi</span></div>
+                    <div class="flex items-center space-x-3 text-zinc-300"><i class="fa-solid fa-martini-glass text-orange-500 text-xl"></i><span>Full Bar</span></div>
+                    <div class="flex items-center space-x-3 text-zinc-300"><i class="fa-solid fa-leaf text-orange-500 text-xl"></i><span>Vegetarian</span></div>
+                </div>
+            </div>
+            <div class="relative fade-in">
+                <img src="https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pizza Chef" class="rounded-xl shadow-2xl">
+                <div class="absolute -bottom-6 -left-6 bg-orange-600 p-6 rounded-xl shadow-xl text-white">
+                    <p class="text-3xl font-bold">4.8★</p>
+                    <p class="text-sm font-semibold uppercase tracking-wider">Top Rated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Wood-Fired Selections</h2>
+                <p class="text-zinc-400 max-w-2xl mx-auto">Dine-in, Takeaway, or Delivery. Experience authentic imported taste.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Product 1 -->
+                <div class="bg-zinc-950 rounded-2xl overflow-hidden shadow-lg group fade-in">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Margherita Pizza" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-serif font-bold text-white">The Classic</h3>
+                            <span class="text-orange-500 font-bold">€12</span>
+                        </div>
+                        <p class="text-zinc-400 text-sm mb-6">Authentic wood-fired crust, imported tomatoes, fresh mozzarella, and basil.</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-zinc-950 rounded-2xl overflow-hidden shadow-lg group fade-in" style="transition-delay: 100ms;">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Vegetarian Pizza" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Vegetarian</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-serif font-bold text-white">Veggie Supreme</h3>
+                            <span class="text-orange-500 font-bold">€15</span>
+                        </div>
+                        <p class="text-zinc-400 text-sm mb-6">Wood-fired perfection loaded with fresh bell peppers, onions, olives, and mushrooms.</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-zinc-950 rounded-2xl overflow-hidden shadow-lg group fade-in" style="transition-delay: 200ms;">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Craft Beer" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-serif font-bold text-white">Drinks & Dessert</h3>
+                            <span class="text-orange-500 font-bold">€5–10</span>
+                        </div>
+                        <p class="text-zinc-400 text-sm mb-6">Local craft beers, premium wine selection, fresh coffee, and house-made desserts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-serif font-bold text-white text-center mb-16 fade-in">What Locals Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 fade-in">
+                    <div class="flex text-orange-500 mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-zinc-300 italic mb-6">"Hidden gem! Imported oven and chef, in a cozy relaxed section of the skatepark. Time is easily spent here for kids and grown kids."</p>
+                    <p class="font-bold text-white">- Lex Breijs</p>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 fade-in" style="transition-delay: 100ms;">
+                    <div class="flex text-orange-500 mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-zinc-300 italic mb-6">"Amazing pizza and lovely beers with skateboard entertainment. Price/quality is great too... Recommended!"</p>
+                    <p class="font-bold text-white">- ceren hüryol</p>
+                </div>
+                <!-- Review 3 -->
+                <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 fade-in" style="transition-delay: 200ms;">
+                    <div class="flex text-orange-500 mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-zinc-300 italic mb-6">"The pizzas here are truly amazing! The atmosphere is super cozy and the staff is friendly. Kids can use the skate park..."</p>
+                    <p class="font-bold text-white">- Carmilla Meijer</p>
+                </div>
+                <!-- Review 4 -->
+                <div class="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 fade-in" style="transition-delay: 300ms;">
+                    <div class="flex text-orange-500 mb-4 text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-zinc-300 italic mb-6">"Cozy place with an authentic atmosphere! Delicious pizza 🍕 from the wood-fired oven."</p>
+                    <p class="font-bold text-white">- sly Kaandorp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit / Reservation / Footer -->
+    <section id="visit" class="py-24 bg-zinc-900 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            <!-- Info & Hours -->
+            <div class="space-y-8 fade-in">
+                <div>
+                    <h2 class="text-4xl font-serif font-bold text-white mb-6">Visit Us</h2>
+                    <p class="text-zinc-400 flex items-start gap-4 mb-4">
+                        <i class="fa-solid fa-location-dot mt-1 text-orange-500"></i>
+                        <span>Piekstraat 45, 3071 EL<br>Rotterdam, Netherlands<br>(WG56+3R)</span>
+                    </p>
+                    <p class="text-zinc-400 flex items-center gap-4 mb-4">
+                        <i class="fa-solid fa-phone text-orange-500"></i>
+                        <span>+31 10 411 3413</span>
+                    </p>
+                </div>
+                
+                <div class="bg-zinc-950 p-6 rounded-xl border border-zinc-800">
+                    <h3 class="text-xl font-bold text-white mb-4 border-b border-zinc-800 pb-2">Opening Hours</h3>
+                    <ul class="space-y-2 text-zinc-400">
+                        <li class="flex justify-between"><span>Mon - Tue</span> <span class="text-red-400">Closed</span></li>
+                        <li class="flex justify-between"><span>Wed - Fri</span> <span>3:00 PM - 10:00 PM</span></li>
+                        <li class="flex justify-between"><span>Sat - Sun</span> <span>1:00 PM - 7:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="flex gap-4">
+                    <i class="fa-brands fa-cc-visa text-3xl text-zinc-600"></i>
+                    <i class="fa-brands fa-cc-mastercard text-3xl text-zinc-600"></i>
+                    <i class="fa-brands fa-apple-pay text-3xl text-zinc-600"></i>
+                </div>
+            </div>
+
+            <!-- Reservation Form -->
+            <div id="reservation" class="bg-zinc-950 p-10 rounded-2xl shadow-2xl border border-zinc-800 fade-in">
+                <h3 class="text-3xl font-serif font-bold text-white mb-2">Reserve your spot</h3>
+                <p class="text-zinc-400 mb-8">Table service available. We accept NFC mobile and card payments.</p>
+                
+                <form id="resForm" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-zinc-400 mb-2">Full Name</label>
+                        <input type="text" id="name" required class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500 transition-colors">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-zinc-400 mb-2">Date</label>
+                            <input type="date" id="date" required class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500 transition-colors cursor-pointer">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-zinc-400 mb-2">Time</label>
+                            <input type="time" id="time" required class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500 transition-colors cursor-pointer">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-zinc-400 mb-2">Number of Guests</label>
+                        <select id="guests" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-orange-500 transition-colors cursor-pointer">
+                            <option>1 Person</option>
+                            <option>2 People</option>
+                            <option>3 People</option>
+                            <option>4+ People</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 rounded-lg transition-colors">Confirm Reservation</button>
+                    <p id="formMessage" class="text-center text-sm font-bold mt-4 hidden"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 py-8 border-t border-zinc-900 text-center text-zinc-500 text-sm">
+
+http://googleusercontent.com/map_location_reference/1
+        <p>&copy; 2026 [Pi! Skateria](http://googleusercontent.com/map_location_reference/0). All rights reserved. Gender-neutral toilets & Table service provided.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
